@@ -20,10 +20,8 @@ const TabelaBody = (props) => (
                 <td>
                     <button
                         className="botao remover"
-                        onClick={() => props.removerLinha(livro.id)}
-                    >
-                        Remover
-                    </button>
+                        onClick={() => props.removerLinha()}>Remover</button>
+                    
                 </td>
             </tr>
         ))}

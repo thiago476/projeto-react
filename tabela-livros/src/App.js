@@ -21,15 +21,18 @@ class App extends Component {
         console.log("Sempre retorna")
       })
   };
+  handlerRemoverLinha = (id) => console.log("Botão clicado");
   render() {
     return (
       <table className="tabela">
         <TabelaHead />
         <TabelaFoot qdeLivros={this.state.livros.length} />
-        <TabelaBody livros={this.state.livros} />
-
+        <TabelaBody livros={this.state.livros} 
+        removerLinha={this.handlerRemoverLinha}/>
       </table>
     );
   }
 }
 export default App;
+
+// 
